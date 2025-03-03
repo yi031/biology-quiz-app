@@ -1,0 +1,100 @@
+/* App.css */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Georgia, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.quiz-container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.question-box {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.4em;
+  color: #444;
+}
+
+.answers {
+  margin-bottom: 20px;
+}
+
+.answer {
+  margin-bottom: 10px;
+}
+
+label {
+  font-size: 1.1em;
+  margin-left: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-family: Georgia, sans-serif;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.help-box,
+.result-box {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2em;
+  color: #666;
+}
+
+.quiz-end {
+  text-align: center;
+  padding: 20px;
+}
+
+.quiz-end button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quiz-end button:hover {
+  background-color: #45a049;
+}

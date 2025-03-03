@@ -1,0 +1,10 @@
+flask
+flask-cors
+openai
+numpy
+scipy
+scikit-learn
+tiktoken
+requests
+beautifulsoup4
+google

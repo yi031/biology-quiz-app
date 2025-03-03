@@ -1,7 +1,7 @@
 import csv
 from hip_agent import HIPAgent
 
-if __name__=="__main__":
+if __name__ == "__main__":
     # Parse the CSV file
     with open("testbench.csv", "r") as csvfile:
         reader = csv.reader(csvfile, delimiter=",")
@@ -16,13 +16,16 @@ if __name__=="__main__":
 
     # Get the user's responses
     user_responses = []
-    for row in data:
+    # for row in data:
+    for i, row in enumerate(data):
         answer_choices = [row[headers.index("answer_0")],
-                        row[headers.index("answer_1")],
-                        row[headers.index("answer_2")],
-                        row[headers.index("answer_3")]]
-        correct_answers.append(answer_choices.index(row[headers.index("correct")]))
-        response = agent.get_response(row[headers.index("question")], answer_choices)
+                          row[headers.index("answer_1")],
+                          row[headers.index("answer_2")],
+                          row[headers.index("answer_3")]]
+        correct_answers.append(answer_choices.index(
+            row[headers.index("correct")]))
+        response = agent.get_response(
+            row[headers.index("question")], answer_choices, i)[0]
         user_responses.append(response)
 
     # Calculate the score

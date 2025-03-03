@@ -1,2 +1,4 @@
 openaikey.txt
-test.py
+__MACOSX/
+__pycache__/
+.qodo
