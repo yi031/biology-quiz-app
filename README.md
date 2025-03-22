@@ -16,7 +16,7 @@ A web-based biology quiz application with AI assistance.
 
 _GPT Integration (hip_agent.py)_
 
-- The agent retrieves relevant context from the textbook.txt using TF-IDF similarity.
+- The agent retrieves relevant context (Retrieval-Augmented Generation) from the textbook.txt using TF-IDF similarity.
 - It constructs a prompt with the question, answer choices, and relevant context, and sent it to the OpenAI API (GPT-3.5-turbo) for processing.
 - The response is parsed to extract the final answer and explanation.
 - The final answer is compared to the given choices using embedding similarity, and the index of the most similar answer choice and the explanation are returned.
