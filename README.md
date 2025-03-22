@@ -2,6 +2,8 @@
 
 A web-based biology quiz application with AI assistance.
 
+![Alt text](interface.png)
+
 ## Features
 
 - Multiple-choice biology questions
@@ -11,8 +13,6 @@ A web-based biology quiz application with AI assistance.
 ---
 
 ## Implementation
-
-Modifications made to the code to make it "better":
 
 _GPT Integration (hip_agent.py)_
 
